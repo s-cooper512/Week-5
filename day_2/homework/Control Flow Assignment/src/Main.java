@@ -101,6 +101,7 @@ public class Main {
         System.out.println(isEven(2));
         System.out.println(getMax(1, 3));
         System.out.println(reverseString("ur mom"));
+        System.out.println(reverseString2("ur dad"));
     }
 
     //Classwork added at end of day...
@@ -121,5 +122,17 @@ public class Main {
 
     public static String reverseString(String input) {
         return(new StringBuilder(input).reverse().toString());
+    }
+
+    public static String reverseString2(String input) {
+        char index;
+        String output = "";
+
+        for (int i=0; input.length() > i; i++) {
+            index = input.charAt(i);
+            output = index + output;
+        }
+
+        return (output);
     }
 }
