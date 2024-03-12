@@ -97,5 +97,29 @@ public class Main {
                 System.out.println("Winter");
                 break;
         }
+
+        System.out.println(isEven(2));
+        System.out.println(getMax(1, 3));
+        System.out.println(reverseString("ur mom"));
+    }
+
+    //Classwork added at end of day...
+    public static boolean isEven(int input) {
+        if (input % 2 == 0) {
+            return(true);
+        }
+        return false;
+    }
+
+    public static int getMax (int input1, int input2) {
+        if (input1 > input2) {
+            return(input1);
+        } else {
+            return(input2);
+        }
+    }
+
+    public static String reverseString(String input) {
+        return(new StringBuilder(input).reverse().toString());
     }
 }
