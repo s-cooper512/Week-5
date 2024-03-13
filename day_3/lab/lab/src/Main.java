@@ -57,8 +57,6 @@ public class Main {
 
         for (int i = input.length - 1; i >= 0; i--) {
             index = input[i];
-            System.out.println(i);
-            System.out.println(index);
             output[input.length - 1 - i] = index;
         }
 
