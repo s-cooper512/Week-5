@@ -9,9 +9,10 @@ public class Book {
     }
 
     public Book () {
-        this.setAuthor("");
-        this.setTitle("");
-        librarySize++;
+//        this.setAuthor("");
+//        this.setTitle("");
+//        librarySize++;
+        this("","");
     }
 
     public Book (String inputTitle, String inputAuthor) {
@@ -31,9 +32,10 @@ public class Book {
         /*this.title = inputTitle;
         this.author = "Unknown";*/
 
-        this.setTitle(inputTitle);
-        this.setAuthor("Unknown");
-        librarySize++;
+//        this.setTitle(inputTitle);
+//        this.setAuthor("Unknown");
+//        librarySize++;
+        this(inputTitle, "Unknown");
     }
 
     public String getTitle () {
